@@ -1,0 +1,72 @@
+/* Nautilus GTK4 Custom Background */
+.nautilus-window .view,
+.nautilus-window .content-view {
+    background-color: #0a0a10; /* main area background */
+    color: #ffffff; /* text color */
+}
+/* ==== Sidebar Fix for Nautilus GTK4 / libadwaita ==== */
+
+/* Sidebar base */
+.navigation-sidebar,
+.navigation-sidebar * {
+    background-color: #0a0a10;   /* red-black background */
+    color: #ffffff;
+    border: none;
+    box-shadow: none;
+}
+
+/* Sidebar rows */
+.navigation-sidebar row {
+    background: transparent;
+    color: #ffffff;
+}
+
+/* Selected row */
+.navigation-sidebar row:selected {
+    background-color: #0a0a10;
+    color: #ffffff;
+}
+
+/* Hover effect */
+.navigation-sidebar row:hover {
+    background-color: #0a0a10;
+}
+
+/* Remove border between sidebar and file view */
+.navigation-sidebar separator,
+.navigation-sidebar .separator {
+    background: none;
+    color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* === Remove white borders/shadows from top bar === */
+
+headerbar,
+.titlebar,
+window.csd headerbar,
+window.csd .titlebar,
+window.csd {
+    background-color: #0a0a10; /* your red top bar */
+    color: #ffffff;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Some Nautilus builds add subtle underlines using borders on GtkBox */
+headerbar > * {
+    border: none;
+    box-shadow: none;
+}
+
+/* Forcefully hide top and bottom borders (the white lines) */
+window.csd decoration {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
