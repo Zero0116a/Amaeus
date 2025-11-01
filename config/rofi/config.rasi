@@ -1,0 +1,8 @@
+/* Dark theme. */
+@import "~/.cache/wal/colors-rofi-dark"
+configuration {
+    modi: "drun,run";                    // Available modes
+    show-icons: true;                    // Show app icons
+    font: "JetBrainsMono Nerd Font 12";  // Global font
+}
+@theme "~/.config/rofi/theme.rasi"
